@@ -1,7 +1,8 @@
 <html><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
     <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B600%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
-    <title>Alera.cloud - About Us</title>
+    <title>Alera - About Us</title>
     <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
     <meta charset="utf-8"/>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -50,27 +51,39 @@
     <body>
     <div class="relative flex size-full min-h-screen flex-col bg-[#101a23] dark group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
     <div class="layout-container flex h-full grow flex-col">
-    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#223649] px-10 py-5 shadow-sm">
+    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#223649] px-6 sm:px-10 py-5 shadow-sm relative z-20">
         <a href="index.html" class="flex items-center gap-3 text-white">
             <div class="h-8 w-8 text-[#0c7ff2]">
                 <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                     <path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
                 </svg>
             </div>
-            <h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">Alera.cloud</h2>
+            <h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">Alera</h2>
         </a>
-        <nav class="flex flex-1 justify-end">
+        <nav class="hidden md:flex flex-1 justify-end">
             <div class="flex items-center gap-6">
-                <a class="text-[#e0e0e0] hover:text-white text-sm font-medium leading-normal transition-colors" href="whatwedo.html">What we do</a>
-                <a class="text-[#e0e0e0] hover:text-white text-sm font-medium leading-normal transition-colors" href="result.html">Use Cases</a>
-                
-                <a class="text-[#e0e0e0] hover:text-white text-sm font-medium leading-normal transition-colors" href="about_us.html">Who we are</a>
-                <a href="contact_us.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-[#0c7ff2] hover:bg-[#0a6cce] text-white text-sm font-semibold leading-normal tracking-[0.015em] transition-colors">
-                    <span class="truncate">Contact Us</span>
+                <a class="text-[#e0e0e0] hover:text-white text-sm font-medium" href="whatwedo.html">What we do</a>
+                <a class="text-[#e0e0e0] hover:text-white text-sm font-medium" href="result.html">Use Cases</a>
+                <a class="text-[#e0e0e0] hover:text-white text-sm font-medium" href="about_us.html">Who we are</a>
+                <a href="contact_us.html" class="flex items-center justify-center rounded-lg h-10 px-5 bg-[#0c7ff2] text-white text-sm font-semibold">
+                    <span>Contact Us</span>
                 </a>
             </div>
         </nav>
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
     </header>
+    <div id="mobile-menu" class="hidden md:hidden bg-[#101a23] p-5 absolute w-full z-10">
+        <a href="whatwedo.html" class="block py-2 px-3 text-white rounded">What we do</a>
+        <a href="result.html" class="block py-2 px-3 text-white rounded">Use Cases</a>
+        <a href="about_us.html" class="block py-2 px-3 text-white rounded">Who we are</a>
+        <a href="contact_us.html" class="block mt-4 py-2 px-3 text-white bg-[#0c7ff2] rounded text-center">Contact Us</a>
+    </div>
     <main class="flex-1 py-16 px-8 md:px-16 lg:px-24">
     <div class="mx-auto max-w-5xl">
     <div class="mb-12 text-center">
@@ -122,10 +135,17 @@
     <a class="text-[#90adcb] hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Privacy Policy</a>
     <a class="text-[#90adcb] hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Terms of Service</a>
     </div>
-    <p class="text-sm font-normal leading-normal text-[#90adcb]">© 2024 Alera.cloud. All rights reserved.</p>
+    <p class="text-sm font-normal leading-normal text-[#90adcb]">© 2024 Alera. All rights reserved.</p>
     </div>
     </footer>
     </div>
     </div>
-    
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
     </body></html>
