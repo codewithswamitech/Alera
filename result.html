@@ -75,27 +75,6 @@
             transform: scale(1.05);
             color: #0c7ff2;
         }
-        
-        @keyframes scroll-logos {
-            from {
-                transform: translateX(0);
-            }
-            to {
-                transform: translateX(-100%);
-            }
-        }
-        .logo-carousel-track {
-            display: flex;
-            animation: scroll-logos 20s linear infinite;
-        }
-        .logo-item {
-            transition: transform 0.3s ease, filter 0.3s ease;
-            filter: grayscale(100%);
-        }
-        .logo-item:hover {
-            transform: scale(1.1);
-            filter: grayscale(0%);
-        }
     </style>
 </head>
 <body class="bg-[#101a23] text-white" style='font-family: Inter, "Noto Sans", sans-serif;'>
@@ -160,22 +139,8 @@
                     </div>
                 </div>
 
-                <div class="mt-24 w-full overflow-hidden">
+                <div class="mt-24 w-full">
                     <h2 class="text-3xl font-semibold text-center mb-12 text-white">Trusted by Industry Leaders</h2>
-                    <div class="logo-carousel-track">
-                        <!-- Duplicate the set for a seamless loop -->
-                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-1.png" alt="Client Logo 1"/></div>
-                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-2.png" alt="Client Logo 2"/></div>
-                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-3.png" alt="Client Logo 3"/></div>
-                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-4.png" alt="Client Logo 4"/></div>
-                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-5.png" alt="Client Logo 5"/></div>
-                        <!-- Duplicate -->
-                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-1.png" alt="Client Logo 1"/></div>
-                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-2.png" alt="Client Logo 2"/></div>
-                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-3.png" alt="Client Logo 3"/></div>
-                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-4.png" alt="Client Logo 4"/></div>
-                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-5.png" alt="Client Logo 5"/></div>
-                    </div>
                 </div>
             </main>
 
