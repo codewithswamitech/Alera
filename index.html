@@ -124,29 +124,26 @@
     <span class="material-icons text-white text-opacity-50">volume_up</span>
     </div>
     <div class="relative z-10 layout-container flex h-full grow flex-col">
-    <header class="px-4 py-6 sm:px-6 lg:px-8">
-    <div class="container mx-auto flex items-center justify-between">
-    <div class="flex items-center">
-    <svg class="h-8 w-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path d="M12 6.25278C12 6.25278 5.66281 3.36963 3.8614 5.17104C2.05999 6.97245 2.80571 13.0685 3.8614 15.171C4.91709 17.2736 8.48294 18.829 12 18.829C15.5171 18.829 19.0829 17.2736 20.1386 15.171C21.1943 13.0685 21.94 6.97245 20.1386 5.17104C18.3372 3.36963 12 6.25278 12 6.25278ZM12 6.25278V2M12 18.829V22M17.25 9.75L21 8M6.75 9.75L3 8M4.5 14.25L1.5 16.5M19.5 14.25L22.5 16.5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-    </svg>
-    <span class="ml-3 text-2xl font-bold text-white">Alera.cloud</span>
-    </div>
-    <nav class="hidden md:flex space-x-8">
-    <a class="text-gray-300 hover:text-white transition-colors" href="#">Solutions</a>
-    <a class="text-gray-300 hover:text-white transition-colors" href="#">Use Cases</a>
-    <a class="text-gray-300 hover:text-white transition-colors" href="#">Resources</a>
-    <a class="text-gray-300 hover:text-white transition-colors" href="#">Company</a>
-    </nav>
-    <button class="hidden md:flex items-center justify-center rounded-lg h-10 px-5 bg-[#0c7ff2] text-white text-sm font-semibold leading-normal hover:bg-blue-600 transition-colors">
-                Contact Sales
-              </button>
-    <button class="md:hidden text-white">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-    </svg>
-    </button>
-    </div>
+    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#223649] px-10 py-5 shadow-sm">
+        <a href="index.html" class="flex items-center gap-3 text-white">
+            <div class="h-8 w-8 text-[#0c7ff2]">
+                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+                </svg>
+            </div>
+            <h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">Alera.cloud</h2>
+        </a>
+        <nav class="flex flex-1 justify-end">
+            <div class="flex items-center gap-6">
+                <a class="text-[#e0e0e0] hover:text-white text-sm font-medium leading-normal transition-colors" href="whatwedo.html">What we do</a>
+                <a class="text-[#e0e0e0] hover:text-white text-sm font-medium leading-normal transition-colors" href="result.html">Use Cases</a>
+               
+                <a class="text-[#e0e0e0] hover:text-white text-sm font-medium leading-normal transition-colors" href="about_us.html">Who we are</a>
+                <a href="contact_us.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-[#0c7ff2] hover:bg-[#0a6cce] text-white text-sm font-semibold leading-normal tracking-[0.015em] transition-colors">
+                    <span class="truncate">Contact Us</span>
+                </a>
+            </div>
+        </nav>
     </header>
     <main class="flex-1 flex flex-col items-center justify-center">
     <div class="container mx-auto px-4 py-16 sm:px-6 lg:px-8 text-center">
@@ -159,12 +156,12 @@
                   Build, deploy, and scale custom AI agents for sales, support, and operations. Alera.cloud empowers your business to unlock new levels of efficiency and innovation.
                 </p>
     <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fadeInUp opacity-0 delay-600" style="animation-fill-mode: forwards;">
-    <button class="flex w-full sm:w-auto min-w-[160px] items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-[#0c7ff2] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-colors shadow-lg hover:shadow-blue-500/50 transform hover:scale-105">
+    <a href="contact_us.html" class="flex w-full sm:w-auto min-w-[160px] items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-[#0c7ff2] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-colors shadow-lg hover:shadow-blue-500/50 transform hover:scale-105">
     <span>Enquire Now</span>
-    </button>
-    <button class="flex w-full sm:w-auto min-w-[160px] items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-transparent border-2 border-gray-600 text-gray-300 text-base font-bold leading-normal hover:bg-gray-700 hover:border-gray-500 transition-colors transform hover:scale-105">
+    </a>
+    <a href="whatwedo.html" class="flex w-full sm:w-auto min-w-[160px] items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-transparent border-2 border-gray-600 text-gray-300 text-base font-bold leading-normal hover:bg-gray-700 hover:border-gray-500 transition-colors transform hover:scale-105">
     <span>Learn More</span>
-    </button>
+    </a>
     </div>
     <div class="mt-8 flex flex-col items-center animate-fadeInUp opacity-0 delay-800" style="animation-fill-mode: forwards;">
     <div class="scroll-cue text-gray-400">

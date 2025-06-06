@@ -1,0 +1,194 @@
+<html><head>
+    <meta charset="utf-8"/>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B600%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+    <title>Alera.cloud - Real Results</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        @keyframes headline-underline {
+            from {
+                transform: scaleX(0);
+            }
+            to {
+                transform: scaleX(1);
+            }
+        }
+        .animate-headline-underline {
+            position: relative;
+            display: inline-block;
+        }
+        .animate-headline-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #0c7ff2;
+            transform-origin: left;
+            animation: headline-underline 1s ease-out forwards;
+        }
+
+        @keyframes fadeInFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .animate-fadeInFromLeft {
+            animation: fadeInFromLeft 0.8s ease-out forwards;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-slideUp {
+            animation: slideUp 0.8s ease-out forwards;
+        }
+
+        @keyframes growIn {
+            from {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        .outcome-text {
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        .group:hover .outcome-text {
+            transform: scale(1.05);
+            color: #0c7ff2;
+        }
+        
+        @keyframes scroll-logos {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        .logo-carousel-track {
+            display: flex;
+            animation: scroll-logos 20s linear infinite;
+        }
+        .logo-item {
+            transition: transform 0.3s ease, filter 0.3s ease;
+            filter: grayscale(100%);
+        }
+        .logo-item:hover {
+            transform: scale(1.1);
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+<body class="bg-[#101a23] text-white" style='font-family: Inter, "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#223649] px-10 py-5 shadow-sm">
+                <a href="index.html" class="flex items-center gap-3 text-white">
+                    <div class="h-8 w-8 text-[#0c7ff2]">
+                        <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">Alera.cloud</h2>
+                </a>
+                <nav class="flex flex-1 justify-end">
+                    <div class="flex items-center gap-6">
+                        <a class="text-[#e0e0e0] hover:text-white text-sm font-medium leading-normal transition-colors" href="whatwedo.html">What we do</a>
+                        <a class="text-[#e0e0e0] hover:text-white text-sm font-medium leading-normal transition-colors" href="result.html">Use Cases</a>
+                        
+                        <a class="text-[#e0e0e0] hover:text-white text-sm font-medium leading-normal transition-colors" href="about_us.html">Who we are</a>
+                        <a href="contact_us.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-[#0c7ff2] hover:bg-[#0a6cce] text-white text-sm font-semibold leading-normal tracking-[0.015em] transition-colors">
+                            <span class="truncate">Contact Us</span>
+                        </a>
+                    </div>
+                </nav>
+            </header>
+
+            <main class="flex-1 py-16 px-8 md:px-16 lg:px-24">
+                <div class="mx-auto max-w-6xl">
+                    <div class="mb-16 text-center">
+                        <h1 class="text-4xl sm:text-5xl font-bold leading-tight tracking-tight text-white animate-headline-underline">Real Results</h1>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Card 1 -->
+                        <div class="group rounded-xl bg-[#1a2733] p-8 shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 hover:bg-[#223649]">
+                            <h3 class="text-2xl font-semibold text-blue-400 mb-3 animate-fadeInFromLeft" style="animation-delay: 0.2s;">Problem</h3>
+                            <p class="text-[#b0c5db] mb-6 animate-fadeInFromLeft" style="animation-delay: 0.4s;">High operational costs and slow manual data processing for a financial services leader.</p>
+                            <h3 class="text-2xl font-semibold text-blue-400 mb-3 animate-slideUp" style="animation-delay: 0.6s;">AI Solution</h3>
+                            <p class="text-[#b0c5db] mb-6 animate-slideUp" style="animation-delay: 0.8s;">Deployed an AI agent to automate data extraction and workflow management.</p>
+                            <h3 class="text-2xl font-semibold text-blue-400 mb-3 animate-growIn" style="animation-delay: 1s;">Outcome</h3>
+                            <p class="text-lg font-bold text-white outcome-text">40% reduction in processing time and a 25% decrease in operational costs.</p>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="group rounded-xl bg-[#1a2733] p-8 shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 hover:bg-[#223649]">
+                             <h3 class="text-2xl font-semibold text-blue-400 mb-3 animate-fadeInFromLeft" style="animation-delay: 0.3s;">Problem</h3>
+                            <p class="text-[#b0c5db] mb-6 animate-fadeInFromLeft" style="animation-delay: 0.5s;">Inconsistent customer support experience across multiple channels for a retail giant.</p>
+                            <h3 class="text-2xl font-semibold text-blue-400 mb-3 animate-slideUp" style="animation-delay: 0.7s;">AI Solution</h3>
+                            <p class="text-[#b0c5db] mb-6 animate-slideUp" style="animation-delay: 0.9s;">Launched a centralized chatbot powered by a custom LLM for instant, 24/7 support.</p>
+                            <h3 class="text-2xl font-semibold text-blue-400 mb-3 animate-growIn" style="animation-delay: 1.1s;">Outcome</h3>
+                            <p class="text-lg font-bold text-white outcome-text">30% increase in customer satisfaction and 50% faster issue resolution.</p>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="group rounded-xl bg-[#1a2733] p-8 shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 hover:bg-[#223649]">
+                            <h3 class="text-2xl font-semibold text-blue-400 mb-3 animate-fadeInFromLeft" style="animation-delay: 0.4s;">Problem</h3>
+                            <p class="text-[#b0c5db] mb-6 animate-fadeInFromLeft" style="animation-delay: 0.6s;">Manufacturing line inefficiencies and unforeseen equipment downtime.</p>
+                            <h3 class="text-2xl font-semibold text-blue-400 mb-3 animate-slideUp" style="animation-delay: 0.8s;">AI Solution</h3>
+                            <p class="text-[#b0c5db] mb-6 animate-slideUp" style="animation-delay: 1.0s;">Implemented a predictive maintenance system using agentic AI integration.</p>
+                            <h3 class="text-2xl font-semibold text-blue-400 mb-3 animate-growIn" style="animation-delay: 1.2s;">Outcome</h3>
+                            <p class="text-lg font-bold text-white outcome-text">20% reduction in downtime and a 15% improvement in production output.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-24 w-full overflow-hidden">
+                    <h2 class="text-3xl font-semibold text-center mb-12 text-white">Trusted by Industry Leaders</h2>
+                    <div class="logo-carousel-track">
+                        <!-- Duplicate the set for a seamless loop -->
+                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-1.png" alt="Client Logo 1"/></div>
+                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-2.png" alt="Client Logo 2"/></div>
+                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-3.png" alt="Client Logo 3"/></div>
+                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-4.png" alt="Client Logo 4"/></div>
+                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-5.png" alt="Client Logo 5"/></div>
+                        <!-- Duplicate -->
+                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-1.png" alt="Client Logo 1"/></div>
+                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-2.png" alt="Client Logo 2"/></div>
+                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-3.png" alt="Client Logo 3"/></div>
+                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-4.png" alt="Client Logo 4"/></div>
+                        <div class="flex-shrink-0 w-1/5 p-4 logo-item"><img src="https://storage.googleapis.com/builder-production/assets/logo-placeholder-5.png" alt="Client Logo 5"/></div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="border-t border-solid border-t-[#223649] bg-[#101a23] py-8">
+                <div class="mx-auto max-w-5xl px-5 text-center">
+                    <div class="mb-4 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+                        <a class="text-[#90adcb] hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Privacy Policy</a>
+                        <a class="text-[#90adcb] hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Terms of Service</a>
+                    </div>
+                    <p class="text-sm font-normal leading-normal text-[#90adcb]">© 2024 Alera.cloud. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
