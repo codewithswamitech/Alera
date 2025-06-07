@@ -65,7 +65,7 @@
                     <a class="text-[#e0e0e0] hover:text-white text-sm font-medium" href="whatwedo.html">What we do</a>
                     <a class="text-[#e0e0e0] hover:text-white text-sm font-medium" href="result.html">Use Cases</a>
                     <a class="text-[#e0e0e0] hover:text-white text-sm font-medium" href="about_us.html">Who we are</a>
-                    <a href="contact_us.html" class="flex items-center justify-center rounded-lg h-10 px-5 bg-[#0c7ff2] text-white text-sm font-semibold">
+                    <a href="#" class="open-enquiry-modal flex items-center justify-center rounded-lg h-10 px-5 bg-[#0c7ff2] text-white text-sm font-semibold">
                         <span>Contact Us</span>
                     </a>
                 </div>
@@ -82,7 +82,7 @@
             <a href="whatwedo.html" class="block py-2 px-3 text-white rounded">What we do</a>
             <a href="result.html" class="block py-2 px-3 text-white rounded">Use Cases</a>
             <a href="about_us.html" class="block py-2 px-3 text-white rounded">Who we are</a>
-            <a href="contact_us.html" class="block mt-4 py-2 px-3 text-white bg-[#0c7ff2] rounded text-center">Contact Us</a>
+            <a href="#" class="open-enquiry-modal block mt-4 py-2 px-3 text-white bg-[#0c7ff2] rounded text-center">Contact Us</a>
         </div>
     <div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-10 sm:py-16">
     <div class="layout-content-container flex flex-col max-w-6xl flex-1">
@@ -165,17 +165,13 @@
     </div>
     </div>
     </div>
+    <div class="flex justify-center items-center">
+      <button class="open-enquiry-modal flex w-full sm:w-auto min-w-[160px] items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-[#0c7ff2] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-colors shadow-lg hover:shadow-blue-500/50 transform hover:scale-105">
+        <span>Enquire Now</span>
+        </button>
     </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
+
+      </div>
     </div>
     <footer class="border-t border-solid border-t-[#223649] bg-[#101a23] py-8">
         <div class="mx-auto max-w-5xl px-5 text-center">
@@ -187,12 +183,121 @@
         </div>
         </footer>
     </div>
+    <div id="enquiry-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4 animate-fadeIn">
+        <div class="bg-[#1a2733] rounded-xl shadow-2xl p-6 sm:p-8 max-w-2xl w-full relative transform transition-all animate-popIn mx-4">
+            <button id="close-modal-button" class="absolute top-4 right-4 text-[#90adcb] hover:text-white transition-colors z-10">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <div class="text-center mb-6">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">Enquire Now</h2>
+                <p class="text-[#90adcb] mt-2 text-sm sm:text-base">Fill out the form below, and our AI team will reach out within 24 hours.</p>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4 sm:space-y-6">
+                <input type="hidden" name="access_key" value="cbc3aa43-54da-4d14-b692-8ec584875726">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                    <div>
+                        <label for="full-name" class="block text-sm font-medium text-[#e0e0e0] mb-2">Full Name</label>
+                        <input type="text" name="full-name" id="full-name" placeholder="John Doe" class="block w-full bg-[#101a23] border border-[#223649] rounded-lg shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-[#0c7ff2] focus:border-[#0c7ff2] transition-colors" required>
+                    </div>
+                    <div>
+                        <label for="company-name" class="block text-sm font-medium text-[#e0e0e0] mb-2">Company / Business Name</label>
+                        <input type="text" name="company-name" id="company-name" placeholder="Acme Inc." class="block w-full bg-[#101a23] border border-[#223649] rounded-lg shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-[#0c7ff2] focus:border-[#0c7ff2] transition-colors">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-[#e0e0e0] mb-2">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="you@example.com" class="block w-full bg-[#101a23] border border-[#223649] rounded-lg shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-[#0c7ff2] focus:border-[#0c7ff2] transition-colors" required>
+                    </div>
+                    <div>
+                        <label for="phone-number" class="block text-sm font-medium text-[#e0e0e0] mb-2">Phone Number <span class="text-gray-400">(Optional)</span></label>
+                        <input type="tel" name="phone-number" id="phone-number" placeholder="+1 (555) 123-4567" class="block w-full bg-[#101a23] border border-[#223649] rounded-lg shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-[#0c7ff2] focus:border-[#0c7ff2] transition-colors">
+                    </div>
+                </div>
+                <div>
+                    <label for="service" class="block text-sm font-medium text-[#e0e0e0] mb-2">Service Interested In</label>
+                    <select id="service" name="service" class="block w-full bg-[#101a23] border border-[#223649] rounded-lg shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-[#0c7ff2] focus:border-[#0c7ff2] transition-colors">
+                        <option>AI Agent Development</option>
+                        <option>Chatbot Deployment</option>
+                        <option>Workflow Automation</option>
+                        <option>Agentic AI Integration</option>
+                        <option>Custom LLM Tool</option>
+                        <option>Business Intelligence Automation</option>
+                        <option>Not Sure Yet</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="requirement" class="block text-sm font-medium text-[#e0e0e0] mb-2">Describe Your Requirement</label>
+                    <textarea id="requirement" name="requirement" rows="3" placeholder="Tell us about your project..." class="block w-full bg-[#101a23] border border-[#223649] rounded-lg shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-[#0c7ff2] focus:border-[#0c7ff2] transition-colors"></textarea>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-[#e0e0e0] mb-3">Preferred Contact Method</label>
+                    <div class="flex flex-wrap items-center gap-x-6 gap-y-2">
+                        <div class="flex items-center">
+                            <input id="contact-email" name="contact-method" type="radio" value="Email" class="h-4 w-4 text-[#0c7ff2] bg-[#101a23] border-[#223649] focus:ring-[#0c7ff2] focus:ring-offset-[#1a2733]">
+                            <label for="contact-email" class="ml-2 block text-sm font-medium text-white">Email</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="contact-whatsapp" name="contact-method" type="radio" value="WhatsApp" class="h-4 w-4 text-[#0c7ff2] bg-[#101a23] border-[#223649] focus:ring-[#0c7ff2] focus:ring-offset-[#1a2733]">
+                            <label for="contact-whatsapp" class="ml-2 block text-sm font-medium text-white">WhatsApp</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="contact-call" name="contact-method" type="radio" value="Call" class="h-4 w-4 text-[#0c7ff2] bg-[#101a23] border-[#223649] focus:ring-[#0c7ff2] focus:ring-offset-[#1a2733]">
+                            <label for="contact-call" class="ml-2 block text-sm font-medium text-white">Call</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-start pt-2">
+                    <div class="flex items-center h-5">
+                        <input id="consent" name="consent" type="checkbox" class="h-4 w-4 text-[#0c7ff2] bg-[#101a23] border-[#223649] rounded focus:ring-[#0c7ff2] focus:ring-offset-[#1a2733]" required>
+                    </div>
+                    <div class="ml-3 text-sm">
+                        <label for="consent" class="font-medium text-white">I agree to be contacted by Alera.cloud regarding my inquiry.</label>
+                    </div>
+                </div>
+                <div class="pt-4">
+                    <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-bold text-white bg-[#0c7ff2] hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0c7ff2] focus:ring-offset-[#1a2733] transform hover:scale-105 transition-all">
+                        Let's Get Started
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
     <script>
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
 
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+        });
+
+        const enquiryModal = document.getElementById('enquiry-modal');
+        const closeModalButton = document.getElementById('close-modal-button');
+        const openModalButtons = document.querySelectorAll('.open-enquiry-modal');
+
+        openModalButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                enquiryModal.classList.remove('hidden');
+                enquiryModal.classList.add('flex');
+            });
+        });
+
+        const hideModal = () => {
+            enquiryModal.classList.add('hidden');
+            enquiryModal.classList.remove('flex');
+        };
+
+        closeModalButton.addEventListener('click', hideModal);
+
+        enquiryModal.addEventListener('click', (event) => {
+            if (event.target === enquiryModal) {
+                hideModal();
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !enquiryModal.classList.contains('hidden')) {
+                hideModal();
+            }
         });
     </script>
     
