@@ -1,0 +1,8 @@
+    <meta charset="utf-8"/>
+    <title>Alera - Who we are</title>
+    <meta name="description" content="Learn about Alera's mission, vision, and the expert team driving innovation in AI agent development, chatbot deployment, and workflow automation."/>
+    <link href="favicon.png" rel="icon" type="image/png"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+// ... existing code ...
+</style> 
