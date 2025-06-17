@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Insights & Resources | Alera Blog</title>
+    <meta name="description" content="Explore Alera's blog for insights on AI agents, AI development, AI strategy, and the latest trends in agentic AI solutions and business automation.">
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B600%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+    <link href="favicon.ico" rel="icon" type="image/png"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Alera",
+      "url": "https://alera.cloud",
+      "logo": "https://alera.cloud/images/Alera%20Logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91 8380070920",
+        "contactType": "Customer Service",
+        "email": "contact@alera.cloud"
+      },
+      "sameAs": [
+        // "https://www.facebook.com/AleraCloud",
+        // "https://www.linkedin.com/company/aleracloud"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Viman Nagar",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "XXXXXX",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
+    <style>
+        body {
+            background-color: #0A1017;
+            color: #e0e0e0;
+            font-family: Inter, "Noto Sans", sans-serif;
+        }
+        .layout-container {
+            max-width: 1100px; /* Adjust as needed */
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .blog-content {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+        }
+        .blog-posts ul {
+            list-style: none;
+            padding: 0;
+        }
+        .blog-posts li a {
+            color: #0c7ff2;
+            text-decoration: none;
+            font-size: 1.125rem; /* text-lg */
+            line-height: 1.75rem;
+        }
+        .blog-posts li a:hover {
+            text-decoration: underline;
+        }
+        .blog-posts li {
+            margin-bottom: 0.75rem;
+        }
+    </style>
+</head>
+<body class="bg-[#0A1017] dark">
+    <div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+        <div class="relative z-10 layout-container flex h-full grow flex-col">
+            <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#223649] px-6 sm:px-10 py-5 shadow-sm relative z-20">
+                <a href="index.html" class="flex items-center gap-3 text-white">
+                    <div class="h-8 w-8">
+                        <img src="favicon.ico" alt="Alera Logo" class="h-full w-full object-contain">
+                    </div>
+                    <h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">Alera</h2>
+                </a>
+                <nav class="hidden md:flex flex-1 justify-end">
+                    <div class="flex items-center gap-6">
+                        <a class="text-[#e0e0e0] hover:text-white text-sm font-medium" href="index.html">Home</a>
+                        <a class="text-[#e0e0e0] hover:text-white text-sm font-medium" href="whatwedo.html">What we do</a>
+                        <a class="text-[#e0e0e0] hover:text-white text-sm font-medium" href="result.html">Use Cases</a>
+                        <a class="text-[#e0e0e0] hover:text-white text-sm font-medium" href="blog.html">Blog</a>
+                        <a class="text-[#e0e0e0] hover:text-white text-sm font-medium" href="about_us.html">Who we are</a>
+                        <a href="contact_us.html" class="flex items-center justify-center rounded-lg h-10 px-5 bg-[#0c7ff2] text-white text-sm font-semibold">
+                            <span>Contact Us</span>
+                        </a>
+                    </div>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </header>
+            <div id="mobile-menu" class="hidden md:hidden bg-[#101a23] p-5 w-full">
+                <a href="index.html" class="block py-2 px-3 text-white rounded">Home</a>
+                <a href="whatwedo.html" class="block py-2 px-3 text-white rounded">What we do</a>
+                <a href="result.html" class="block py-2 px-3 text-white rounded">Use Cases</a>
+                <a href="blog.html" class="block py-2 px-3 text-white rounded">Blog</a>
+                <a href="about_us.html" class="block py-2 px-3 text-white rounded">Who we are</a>
+                <a href="contact_us.html" class="block mt-4 py-2 px-3 text-white bg-[#0c7ff2] rounded text-center">Contact Us</a>
+            </div>
+
+            <main class="flex-1 blog-content">
+                <h1 class="text-4xl sm:text-5xl font-bold leading-tight tracking-tight text-white text-center mb-10">Alera AI Insights & Resources</h1>
+                <p class="mt-6 text-lg sm:text-xl leading-relaxed text-gray-300 max-w-3xl mx-auto text-center mb-12">Welcome to the Alera blog! Here we share insights, guides, and resources on <a href="blog/how-ai-agents-transform-business-operations.html" class="text-[#0c7ff2] hover:underline">AI agents</a>, <a href="blog/complete-guide-to-ai-development-for-enterprises.html" class="text-[#0c7ff2] hover:underline">AI development</a>, <a href="blog/choosing-the-right-ai-consulting-partner.html" class="text-[#0c7ff2] hover:underline">AI strategy</a>, and how these technologies can transform your business. Check back regularly for new articles.</p>
+
+                <section class="blog-posts max-w-3xl mx-auto">
+                    <h2 class="text-3xl sm:text-4xl font-bold leading-tight tracking-tight text-white mb-8 text-center">Latest Articles</h2>
+                    <ul>
+                      <li><a href="blog/how-ai-agents-transform-business-operations.html">How AI Agents Transform Business Operations</a></li>
+                      <li><a href="blog/complete-guide-to-ai-development-for-enterprises.html">A Complete Guide to AI Development for Enterprises</a></li>
+                      <li><a href="blog/choosing-the-right-ai-consulting-partner.html">Choosing the Right AI Consulting Partner</a></li>
+                    </ul>
+                </section>
+            </main>
+
+            <footer class="border-t border-solid border-t-[#223649] bg-[#101a23] py-8 mt-auto">
+                <div class="mx-auto max-w-5xl px-5 text-center">
+                <p class="text-sm font-normal leading-normal text-[#90adcb] mb-2">Pune, India</p>
+                <div class="mb-4 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+                <a class="text-[#90adcb] hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Privacy Policy</a>
+                <a class="text-[#90adcb] hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Terms of Service</a>
+                </div>
+                <p class="text-sm font-normal leading-normal text-[#90adcb]">© 2024 Alera. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
